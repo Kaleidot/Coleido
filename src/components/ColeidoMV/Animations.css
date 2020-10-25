@@ -1,0 +1,208 @@
+.prawnContainer {
+    display: flex;
+    justifyContent: 'space-between';
+    flex-direction: row;
+    position: absolute;
+}
+
+.prawnIconVarient1 {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+}
+
+.prawnIconVarient2 {
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+}
+
+.prawnIconVarient3 {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+
+}
+
+.prawnIconVarient4 {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+
+}
+
+.prawnIconVarient5 {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+
+}
+
+.prawnIconVarient6 {
+    width: 25px;
+    height: 25px;
+}
+
+.prawnIconVarient7 {
+    width: 50px;
+    height: 50px;
+}
+
+.prawnIconVarient8 {
+    width: 75px;
+    height: 75px;
+}
+
+.prawnIconVarient9 {
+    width: 100px;
+    height: 100px;
+}
+
+.prawnIconVarient10 {
+    width: 180px;
+    height: 180px;
+}
+
+.prawnGrid {
+    display: grid;
+    grid: auto-flow / repeat(5, 1fr);
+    position: absolute;
+}
+
+@keyframes Icon-spin-1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes Icon-spin-2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes Icon-spin-3 {
+    from {
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes Icon-spin-4 {
+    from {
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes Icon-spin-5 {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes Icon-go-up-1 {
+    from {
+        margin-top: 100%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+}
+
+@keyframes Icon-go-up-2 {
+    from {
+        margin-top: 0%;
+    }
+
+    to {
+        margin-top: 100%;
+    }
+}
+
+@keyframes Icon-go-down-1 {
+    from {
+        margin-down: 0%;
+    }
+
+    to {
+        margin-down: 100%;
+    }
+}
+
+@keyframes Icon-go-down-2 {
+    from {
+        margin-down: 100%;
+    }
+
+    to {
+        margin-down: 0%;
+    }
+}
+
+@keyframes Icon-go-down-3 {
+    from {
+        margin-down: 20%;
+    }
+
+    to {
+        margin-down: 80%;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .prawnIconVarient1 {
+        animation: Icon-spin-1 infinite alternate 1.6s steps(4);
+
+    }
+    .prawnIconVarient2 {
+        animation: Icon-spin-2 infinite alternate 1.6s steps(4);
+
+    }
+    .prawnIconVarient3 {
+        animation: Icon-spin-5 infinite alternate 3.2s steps(8);
+
+    }
+    .prawnIconVarient4 {
+        animation: Icon-spin-3 infinite alternate 1.6s steps(4);
+
+    }
+    .prawnIconVarient5 {
+        animation: Icon-spin-4 infinite alternate 1.6s steps(4);
+
+    }
+    .prawnIconVarient6 {
+        animation: Icon-go-up-1 infinite alternate 1.6s steps(4);
+
+    }
+    .prawnIconVarient7 {
+        animation: Icon-go-down-1 infinite alternate 1.6s steps(4);
+
+    }
+    .prawnIconVarient8 {
+        animation: Icon-go-down-3 infinite alternate 1.6s steps(4);
+
+    }
+    .prawnIconVarient9 {
+        animation: Icon-go-up-2 infinite alternate 1.6s steps(4);
+
+    }
+    .prawnIconVarient10 {
+        animation: Icon-go-down-2 infinite alternate 1.6s steps(4);
+
+    }
+}
